@@ -14,15 +14,15 @@ with open('sentiment_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Create the Streamlit app
-st.title("Netherlands Wikipedia Sentiment Analysis by Malde Saicharan")
+st.title("Denmark Wikipedia Sentiment Analysis by Ananya Peddamgari")
 
 st.write('''
-This app predicts the sentiment of text based on a model trained on Netherlands Wikipedia data.
+This app predicts the sentiment of text based on a model trained on Denmark Wikipedia data.
 Enter a sentence below to analyze its sentiment.
 ''')
 
 # Input text box
-user_input = st.text_area("Enter a sentence:", "The Netherlands is a beautiful country with rich history.")
+user_input = st.text_area("Enter a sentence:", "The Denmark is a beautiful country with rich history.")
 
 # Word Cloud Visualization of the input sentence
 if user_input:
@@ -72,7 +72,7 @@ if st.button("Predict Sentiment"):
 
 st.subheader("About this Model")
 st.write('''
-This sentiment analysis model was trained on text from the Netherlands Wikipedia page.
+This sentiment analysis model was trained on text from the Denmark Wikipedia page.
 The data preparation included:
 - Scraping and cleaning Wikipedia text
 - Sentence tokenization and sentiment analysis with TextBlob
